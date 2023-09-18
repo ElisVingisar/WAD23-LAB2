@@ -78,18 +78,18 @@
                 </tr>
             </tfoot>
         </table>
-        <form>
-            <label>Course Title:</label><br>
-            <input type="text"><br>
+        <form action="backend_path" method="post">
+            <label for="CTitle">Course Title:</label><br>
+            <input type="text" id="CTitle" name="CTitle"><br>
             <label for="semester">Semester:</label><br>
-            <select id="semester">
+            <select id="semester" name="Csemester">
                 <option value="fall">Fall</option>
                 <option value="spring">Spring</option>
             </select><br>
             <label><b>Attendance:</b></label><br>
-            <input type="radio" id="virtual" name="attq">
+            <input type="radio" id="virtual" name="attq" value="Virtual attendance">
             <label for="virtual">Virtual attendance</label><br>
-            <input type="radio" id="physical" name="attq">
+            <input type="radio" id="physical" name="attq" value="Physical attendance">
             <label for="physical">Physical attendance</label><br>
             <input type="submit" value="Submit">
         </form>
